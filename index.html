@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Food Munch - Order delicious food from your favorite restaurants."
+    >
+
+    <title>Food Munch | Delicious Food Delivered</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="container navbar-container">
+
+
+                <!-- Logo -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Food Munch
+                </a>
+
+
+                <!-- Navigation Menu -->
+
+                <ul class="nav-menu">
+
+
+                    <!-- Home -->
+
+                    <li class="nav-item">
+
+                        <a
+                            href="#home"
+                            class="nav-link"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <!-- Why Choose Us -->
+
+                    <li class="nav-item">
+
+                        <a
+                            href="#why-choose-us"
+                            class="nav-link"
+                        >
+                            Why Choose Us
+                        </a>
+
+                    </li>
+
+
+                    <!-- Explore Menu -->
+
+                    <li class="nav-item">
+
+                        <a
+                            href="#explore-menu"
+                            class="nav-link"
+                        >
+                            Explore Menu
+                        </a>
+
+                    </li>
+
+
+                    <!-- Delivery & Payment -->
+
+                    <li class="nav-item">
+
+                        <a
+                            href="#delivery-payment"
+                            class="nav-link"
+                        >
+                            Delivery & Payment
+                        </a>
+
+                    </li>
+
+
+                    <!-- Follow Us -->
+
+                    <li class="nav-item">
+
+                        <a
+                            href="#follow-us"
+                            class="nav-link"
+                        >
+                            Follow Us
+                        </a>
+
+                    </li>
+
+
+                    <!-- Dark Mode -->
+
+                    <li class="nav-item">
+
+                        <button
+                            type="button"
+                            class="theme-button"
+                            id="themeButton"
+                            aria-label="Toggle dark mode"
+                        >
+                            🌙
+                        </button>
+
+                    </li>
+
+
+                    <!-- Cart -->
+
+                    <li class="nav-item">
+
+                        <button
+                            type="button"
+                            class="cart-button"
+                            id="cartButton"
+                        >
+
+                            🛒 Cart
+
+                            <span id="cartCount">
+                                0
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <!-- Login -->
+
+                    <li
+                        class="nav-item"
+                        id="loginNavItem"
+                    >
+
+                        <a
+                            href="login.html"
+                            class="nav-link"
+                        >
+                            Login
+                        </a>
+
+                    </li>
+
+
+                    <!-- Register -->
+
+                    <li
+                        class="nav-item"
+                        id="registerNavItem"
+                    >
+
+                        <a
+                            href="register.html"
+                            class="nav-link"
+                        >
+                            Register
+                        </a>
+
+                    </li>
+
+
+                    <!-- Logged In User -->
+
+                    <li
+                        class="nav-item"
+                        id="userNavItem"
+                        style="display: none;"
+                    >
+
+                        <span
+                            class="nav-user"
+                            id="navUserName"
+                        >
+                        </span>
+
+                    </li>
+                    <li
+    class="nav-item"
+    id="adminNavItem"
+    style="display: none;"
+>
+    <a
+        href="admin.html"
+        class="nav-link"
+    >
+        Admin Dashboard
+    </a>
+</li>
+
+
+                    <!-- Logout -->
+
+                    <li
+                        class="nav-item"
+                        id="logoutNavItem"
+                        style="display: none;"
+                    >
+
+                        <button
+                            type="button"
+                            class="logout-button"
+                            id="logoutButton"
+                        >
+                            Logout
+                        </button>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Mobile Menu Button -->
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section
+            id="home"
+            class="hero-section"
+        >
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+
+                    <p class="hero-small-text">
+                        Welcome to Food Munch
+                    </p>
+
+
+                    <h1 class="hero-title">
+
+                        Delicious Food,
+
+                        <span>
+                            Delivered Fast
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Discover delicious meals from your favorite
+                        restaurants and enjoy them at your doorstep.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+
+                        <a
+                            href="#explore-menu"
+                            class="btn primary-btn"
+                        >
+                            Explore Menu
+                        </a>
+
+
+                        <a
+                            href="#why-choose-us"
+                            class="btn secondary-btn"
+                        >
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             WHY CHOOSE US
+        ========================== -->
+
+        <section
+            id="why-choose-us"
+            class="why-section"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        Why Food Munch?
+                    </p>
+
+
+                    <h2 class="section-title">
+                        Why Choose Us
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        We make ordering your favorite food simple,
+                        convenient, and enjoyable.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Features -->
+
+                <div class="features-container">
+
+
+                    <!-- Feature 1 -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🍽️
+                        </div>
+
+
+                        <h3 class="feature-title">
+                            Fresh Food
+                        </h3>
+
+
+                        <p class="feature-description">
+
+                            Enjoy fresh and delicious meals prepared
+                            with quality ingredients.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- Feature 2 -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🚚
+                        </div>
+
+
+                        <h3 class="feature-title">
+                            Fast Delivery
+                        </h3>
+
+
+                        <p class="feature-description">
+
+                            Get your favorite food delivered quickly
+                            and conveniently.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- Feature 3 -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            💳
+                        </div>
+
+
+                        <h3 class="feature-title">
+                            Easy Payment
+                        </h3>
+
+
+                        <p class="feature-description">
+
+                            Enjoy simple and secure payment options
+                            for your orders.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             EXPLORE MENU
+        ========================== -->
+
+        <section
+            id="explore-menu"
+            class="menu-section"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        Our Food
+                    </p>
+
+
+                    <h2 class="section-title">
+                        Explore Menu
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        Choose from a variety of delicious food items.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================
+                     MENU CONTROLS
+                ========================== -->
+
+                <div class="menu-controls">
+
+
+                    <!-- Search -->
+
+                    <div class="menu-search">
+
+                        <label for="foodSearch">
+                            Search Food
+                        </label>
+
+
+                        <input
+                            type="search"
+                            id="foodSearch"
+                            placeholder="Search for food..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Categories -->
+
+                    <div class="category-buttons">
+
+
+                        <button
+                            type="button"
+                            class="category-btn active"
+                            data-category="all"
+                        >
+                            All
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-btn"
+                            data-category="pizza"
+                        >
+                            Pizza
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-btn"
+                            data-category="burger"
+                        >
+                            Burgers
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-btn"
+                            data-category="biryani"
+                        >
+                            Biryani
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-btn"
+                            data-category="dessert"
+                        >
+                            Desserts
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Sorting -->
+
+                    <div class="menu-sort">
+
+                        <label for="sortFood">
+                            Sort By
+                        </label>
+
+
+                        <select id="sortFood">
+
+                            <option value="default">
+                                Default
+                            </option>
+
+
+                            <option value="low">
+                                Price: Low to High
+                            </option>
+
+
+                            <option value="high">
+                                Price: High to Low
+                            </option>
+
+
+                            <option value="rating">
+                                Rating: High to Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     FOOD ITEMS
+                ========================== -->
+
+                <div
+                    class="food-container"
+                    id="foodContainer"
+                >
+
+                    <!-- Food cards are created by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             HEALTHY FOOD SECTION
+        ========================== -->
+
+        <section class="healthy-section">
+
+            <div class="container healthy-container">
+
+                <div class="healthy-content">
+
+
+                    <p class="section-subtitle">
+                        Healthy Choices
+                    </p>
+
+
+                    <h2 class="section-title">
+                        Fresh & Healthy Food
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        Choose nutritious meals prepared with fresh
+                        ingredients and delivered to your doorstep.
+
+                    </p>
+
+
+                    <a
+                        href="#explore-menu"
+                        class="btn primary-btn"
+                    >
+                        Explore Healthy Food
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DELIVERY & PAYMENT
+        ========================== -->
+
+        <section
+            id="delivery-payment"
+            class="delivery-section"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        Simple & Convenient
+                    </p>
+
+
+                    <h2 class="section-title">
+                        Delivery & Payment
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        Order your favorite food and pay using
+                        convenient payment options.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Delivery Cards -->
+
+                <div class="delivery-container">
+
+
+                    <!-- Delivery -->
+
+                    <article class="delivery-card">
+
+                        <div class="delivery-icon">
+                            🚴
+                        </div>
+
+
+                        <h3>
+                            Fast Delivery
+                        </h3>
+
+
+                        <p>
+
+                            Receive your food quickly at your
+                            preferred location.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- Payment -->
+
+                    <article class="delivery-card">
+
+                        <div class="delivery-icon">
+                            💰
+                        </div>
+
+
+                        <h3>
+                            Multiple Payments
+                        </h3>
+
+
+                        <p>
+
+                            Pay securely using different payment
+                            methods.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- Ordering -->
+
+                    <article class="delivery-card">
+
+                        <div class="delivery-icon">
+                            📦
+                        </div>
+
+
+                        <h3>
+                            Easy Ordering
+                        </h3>
+
+
+                        <p>
+
+                            Place and track your food orders easily.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FOLLOW US
+        ========================== -->
+
+        <section
+            id="follow-us"
+            class="follow-section"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        Stay Connected
+                    </p>
+
+
+                    <h2 class="section-title">
+                        Follow Us
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        Follow Food Munch and stay updated with
+                        our latest offers and food items.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Social Links -->
+
+                <div class="social-container">
+
+
+                    <a
+                        href="#"
+                        class="social-link"
+                        aria-label="Facebook"
+                    >
+                        Facebook
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-link"
+                        aria-label="Instagram"
+                    >
+                        Instagram
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-link"
+                        aria-label="Twitter"
+                    >
+                        Twitter
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CART OVERLAY
+        ========================== -->
+
+        <div
+            class="cart-overlay"
+            id="cartOverlay"
+        >
+        </div>
+
+
+
+        <!-- =========================
+             CART PANEL
+        ========================== -->
+
+        <aside
+            class="cart-panel"
+            id="cartPanel"
+            aria-label="Shopping cart"
+        >
+
+
+            <!-- Cart Header -->
+
+            <div class="cart-header">
+
+
+                <h2>
+                    Your Cart
+                </h2>
+
+
+                <button
+                    type="button"
+                    class="close-cart"
+                    id="closeCart"
+                    aria-label="Close shopping cart"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <!-- Cart Items -->
+
+            <div
+                class="cart-items"
+                id="cartItems"
+            >
+
+                <!-- Cart items are created by JavaScript -->
+
+            </div>
+
+
+
+            <!-- Empty Cart -->
+
+            <div
+                class="empty-cart"
+                id="emptyCart"
+            >
+
+
+                <div class="empty-cart-icon">
+                    🛒
+                </div>
+
+
+                <h3>
+                    Your cart is empty
+                </h3>
+
+
+                <p>
+
+                    Add some delicious food to get started.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Cart Summary -->
+
+            <div
+                class="cart-summary"
+                id="cartSummary"
+            >
+
+
+                <!-- Subtotal -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+
+                    <span id="cartSubtotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+
+                <!-- Delivery -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Delivery
+                    </span>
+
+
+                    <span id="deliveryCharge">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+
+                <!-- Divider -->
+
+                <div class="summary-divider">
+                </div>
+
+
+
+                <!-- Total -->
+
+                <div class="summary-row total-row">
+
+                    <span>
+                        Total
+                    </span>
+
+
+                    <span id="cartTotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+
+                <!-- Checkout -->
+
+                <button
+                    type="button"
+                    class="checkout-btn"
+                    id="checkoutButton"
+                >
+                    Proceed to Checkout
+                </button>
+
+
+
+                <!-- Clear Cart -->
+
+                <button
+                    type="button"
+                    class="clear-cart-btn"
+                    id="clearCartButton"
+                >
+                    Clear Cart
+                </button>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+
+            <!-- Footer About -->
+
+            <div class="footer-content">
+
+                <h2 class="footer-logo">
+                    Food Munch
+                </h2>
+
+
+                <p>
+
+                    Delicious food delivered to your doorstep.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Footer Links -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#explore-menu">
+                    Menu
+                </a>
+
+
+                <a href="#delivery-payment">
+                    Delivery
+                </a>
+
+            </div>
+
+
+
+            <!-- Footer Contact -->
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+
+                <p>
+                    Email: support@foodmunch.com
+                </p>
+
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Food Munch. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

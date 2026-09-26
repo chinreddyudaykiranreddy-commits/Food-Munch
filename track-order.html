@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Track Order - Food Munch
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="container navbar-container">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Food Munch
+                </a>
+
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item">
+
+                        <a
+                            href="index.html"
+                            class="nav-link"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            href="order-history.html"
+                            class="nav-link"
+                        >
+                            My Orders
+                        </a>
+
+                    </li>
+
+
+                    <!-- =========================================
+                         ADMIN DASHBOARD
+                         Visible only for admin
+                    ========================================== -->
+
+                    <li
+                        class="nav-item"
+                        id="adminNavItem"
+                        style="display: none;"
+                    >
+
+                        <a
+                            href="admin.html"
+                            class="nav-link"
+                        >
+                            Admin Dashboard
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <span
+                            class="nav-user"
+                            id="navUserName"
+                        >
+                        </span>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <button
+                            type="button"
+                            class="logout-button"
+                            id="logoutButton"
+                        >
+                            Logout
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         TRACK ORDER
+    ========================================== -->
+
+    <main class="track-order-page">
+
+        <div class="container">
+
+            <div
+                class="track-order-container"
+                id="trackOrderContainer"
+            >
+
+                <!-- JavaScript will load order -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/track-order.js"></script>
+
+</body>
+
+</html>

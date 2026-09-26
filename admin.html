@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Food Munch - Admin Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="container navbar-container">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Food Munch
+                </a>
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item">
+                        <a
+                            href="index.html"
+                            class="nav-link"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            href="order-history.html"
+                            class="nav-link"
+                        >
+                            Orders
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span
+                            class="nav-user"
+                            id="adminUserName"
+                        >
+                        </span>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <button
+                            type="button"
+                            class="logout-button"
+                            id="adminLogoutButton"
+                        >
+                            Logout
+                        </button>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <button
+                            type="button"
+                            class="theme-button"
+                            id="themeButton"
+                            aria-label="Toggle dark mode"
+                        >
+                            🌙
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         ADMIN DASHBOARD
+    ========================== -->
+
+    <main class="admin-page">
+
+        <div class="container admin-container">
+
+            <!-- Dashboard Header -->
+
+            <div class="admin-header">
+
+                <div>
+
+                    <p class="admin-welcome">
+                        Welcome to
+                    </p>
+
+                    <h1>
+                        Admin Dashboard
+                    </h1>
+
+                    <p class="admin-subtitle">
+                        Manage Food Munch orders and customers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 STATISTICS
+            ========================== -->
+
+            <section class="admin-stats">
+
+                <!-- Total Orders -->
+
+                <div class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        📦
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Orders
+                        </p>
+
+                        <h2 id="totalOrders">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Total Revenue -->
+
+                <div class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        💰
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Revenue
+                        </p>
+
+                        <h2 id="totalRevenue">
+                            ₹0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Total Customers -->
+
+                <div class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Customers
+                        </p>
+
+                        <h2 id="totalCustomers">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Pending Orders -->
+
+                <div class="admin-stat-card">
+
+                    <div class="admin-stat-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Pending Orders
+                        </p>
+
+                        <h2 id="pendingOrders">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 ORDER MANAGEMENT
+            ========================== -->
+
+            <section class="admin-orders-section">
+
+                <div class="admin-section-header">
+
+                    <div>
+
+                        <h2>
+                            Manage Orders
+                        </h2>
+
+                        <p>
+                            View and update customer orders.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Search + Filter -->
+
+                <div class="admin-controls">
+
+                    <div class="admin-search">
+
+                        <label for="adminOrderSearch">
+                            Search Orders
+                        </label>
+
+                        <input
+                            type="search"
+                            id="adminOrderSearch"
+                            placeholder="Search by order ID or customer..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <div class="admin-filter">
+
+                        <label for="adminStatusFilter">
+                            Filter By Status
+                        </label>
+
+                        <select
+                            id="adminStatusFilter"
+                        >
+
+                            <option value="all">
+                                All Orders
+                            </option>
+
+                            <option value="Order Placed">
+                                Order Placed
+                            </option>
+
+                            <option value="Preparing">
+                                Preparing
+                            </option>
+
+                            <option value="Out for Delivery">
+                                Out for Delivery
+                            </option>
+
+                            <option value="Delivered">
+                                Delivered
+                            </option>
+
+                            <option value="Cancelled">
+                                Cancelled
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Orders Container -->
+
+                <div
+                    id="adminOrdersContainer"
+                    class="admin-orders-container"
+                >
+                </div>
+
+
+                <!-- No Orders -->
+
+                <div
+                    id="adminNoOrders"
+                    class="admin-no-orders"
+                >
+
+                    <div class="no-orders-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        No Orders Found
+                    </h3>
+
+                    <p>
+                        There are no orders matching your search.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Food Munch. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

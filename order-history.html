@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Food Munch - View your previous food orders."
+    >
+
+    <title>Food Munch | Order History</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="container navbar-container">
+
+
+                <!-- Logo -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Food Munch
+                </a>
+
+
+                <!-- Navigation -->
+
+                <ul class="nav-menu">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            href="index.html"
+                            class="nav-link"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            href="index.html#explore-menu"
+                            class="nav-link"
+                        >
+                            Menu
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            href="checkout.html"
+                            class="nav-link"
+                        >
+                            Checkout
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            href="order-history.html"
+                            class="nav-link"
+                        >
+                            Orders
+                        </a>
+
+                    </li>
+
+
+                    <li
+                        class="nav-item"
+                        id="userNavItem"
+                    >
+
+                        <span
+                            class="nav-user"
+                            id="navUserName"
+                        >
+                        </span>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <button
+                            type="button"
+                            class="logout-button"
+                            id="logoutButton"
+                        >
+                            Logout
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         ORDER HISTORY
+    ========================== -->
+
+    <main class="order-history-page">
+
+        <div class="container">
+
+
+            <!-- =========================
+                 PAGE HEADING
+            ========================== -->
+
+            <div class="section-heading">
+
+                <p class="section-subtitle">
+                    Your Orders
+                </p>
+
+                <h1 class="section-title">
+                    Order History
+                </h1>
+
+                <p class="section-description">
+                    View your previous Food Munch orders.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 USER INFORMATION
+            ========================== -->
+
+            <div
+                class="order-user-card"
+                id="orderUserCard"
+            >
+
+                <div>
+
+                    <span>
+                        Logged in as
+                    </span>
+
+                    <strong id="orderUserName">
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Email
+                    </span>
+
+                    <strong id="orderUserEmail">
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 ORDER SEARCH & FILTER
+            ========================== -->
+
+            <div class="order-controls">
+
+
+                <!-- Search -->
+
+                <div class="order-search">
+
+                    <label for="orderSearch">
+                        Search Order
+                    </label>
+
+                    <input
+                        type="search"
+                        id="orderSearch"
+                        placeholder="Search by Order ID..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+
+                <!-- Status Filter -->
+
+                <div class="order-filter">
+
+                    <label for="orderStatusFilter">
+                        Filter By Status
+                    </label>
+
+                    <select
+                        id="orderStatusFilter"
+                    >
+
+                        <option value="all">
+                            All Orders
+                        </option>
+
+                        <option value="Order Placed">
+                            Order Placed
+                        </option>
+
+                        <option value="Preparing">
+                            Preparing
+                        </option>
+
+                        <option value="Out for Delivery">
+                            Out for Delivery
+                        </option>
+
+                        <option value="Delivered">
+                            Delivered
+                        </option>
+
+                        <option value="Cancelled">
+                            Cancelled
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 ORDERS
+            ========================== -->
+
+            <div
+                class="orders-container"
+                id="ordersContainer"
+            >
+
+                <!-- Orders created by JavaScript -->
+
+            </div>
+
+
+
+            <!-- =========================
+                 EMPTY ORDERS
+            ========================== -->
+
+            <div
+                class="no-orders"
+                id="noOrders"
+            >
+
+                <div class="no-orders-icon">
+                    📦
+                </div>
+
+                <h2>
+                    No Orders Yet
+                </h2>
+
+                <p>
+                    You haven't placed any orders yet.
+                </p>
+
+                <a
+                    href="index.html#explore-menu"
+                    class="btn primary-btn"
+                >
+                    Explore Menu
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Food Munch. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/order-history.js"></script>
+
+
+</body>
+
+</html>
