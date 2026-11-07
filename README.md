@@ -1,18 +1,32 @@
-# Food Munch
+# 🍔 Food Munch – Food Ordering Web Application
 
-Food Munch is a responsive food-ordering demo built with HTML, CSS, and vanilla JavaScript. It includes a food menu, shopping cart, simulated checkout, order history and tracking, and an admin dashboard.
+Food Munch is a responsive frontend food-ordering demo built using HTML, CSS and Vanilla JavaScript. It provides an interactive experience for browsing food items, managing a shopping cart, placing simulated orders and tracking order status.
 
-## Features
+## ✨ Key Features
 
-- Browse a menu of food items; search, filter by category, and sort by price or rating.
-- Add items to the cart, update quantities, remove items, and view the order total.
-- Register and log in with a demo account.
-- Place an order with customer and delivery details.
-- Review order history, filter by status, track an order, and reorder or cancel eligible orders.
-- Use the admin dashboard to review orders and update their status.
-- Responsive styling and dark-mode controls on supported pages.
+- **Food Menu:** Browse food items with search, category filters and sorting by price or rating.
+- **Shopping Cart:** Add items, update quantities, remove products and calculate order totals.
+- **User Authentication:** Demo registration and login functionality.
+- **Checkout:** Enter customer and delivery details and place simulated orders.
+- **Order History:** View, search and filter previous orders.
+- **Order Tracking:** Track order status and view delivery progress.
+- **Reorder & Cancellation:** Reorder items or cancel eligible orders.
+- **Admin Dashboard:** Review customer orders and update order statuses.
+- **Responsive Design:** Supports different screen sizes.
+- **Dark Mode:** Available on supported pages.
 
-## Project structure
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Application structure |
+| CSS3 | Styling and responsive design |
+| JavaScript | Application functionality and interactions |
+| localStorage | Browser-based data storage |
+| Unsplash | Food images |
+| Google Fonts | Poppins typography |
+
+## 📂 Project Structure
 
 ```text
 Food-Munch/
@@ -34,58 +48,72 @@ Food-Munch/
     └── track-order.js
 ```
 
-## Run locally
+## 🚀 Getting Started
 
-No build step or package installation is required. Run the project through a local static web server:
+No package installation or build process is required.
 
-### With VS Code Live Server
+### Option 1: VS Code Live Server
 
-1. Open the project folder in VS Code.
-2. If needed, install the **Live Server** extension.
-3. Right-click `index.html` and choose **Open with Live Server**.
+1. Clone or download the repository.
+2. Open the project folder in VS Code.
+3. Open `index.html`.
+4. Right-click and select **Open with Live Server**.
 
-### With Python
+### Option 2: Python HTTP Server
 
-1. Open a terminal in the project root.
-2. Start Python's built-in static server:
+Run this command from the project root:
 
-   ```powershell
-   py -m http.server 8000
-   ```
+```bash
+py -m http.server 8000
+```
 
-3. Visit [http://localhost:8000](http://localhost:8000) in your browser.
+Open the application at:
 
-Keep using the same local-server address while testing. Browser `localStorage` is scoped to the site origin, so data created under one address may not appear under another.
+http://localhost:8000
 
-## Try the application
+## 🧪 How to Test the Application
 
-1. Open **Register** and create an account with your name, email, and password.
-2. Log in with that account.
-3. Browse the menu, add food to the cart, and select **Proceed to Checkout**.
-4. Enter the delivery details and place your order.
-5. Open **Orders** to search and filter your orders, track an order, reorder, or cancel one that is still in the `Order Placed` state.
+1. Register a new demo account.
+2. Log in using your account.
+3. Browse food items and use search and category filters.
+4. Add items to the cart and update quantities.
+5. Proceed to checkout and enter delivery details.
+6. Place a demo order.
+7. Open Order History to track, reorder or cancel eligible orders.
+8. Try the Admin Dashboard to update order statuses.
 
-Orders begin with the `Order Placed` status. The demo admin can update order statuses to `Preparing`, `Out for Delivery`, `Delivered`, or `Cancelled`.
+## ⚙️ Admin Dashboard
 
-## Admin dashboard
+The demo checks whether the signed-in account email is `admin@foodmunch.com`.
 
-The dashboard checks whether the signed-in account's email is `admin@foodmunch.com`. To try the demo admin dashboard, register an account with that email and a password you choose, log in, and open **Admin Dashboard** from the home page navigation.
+Register using that email and a password you choose, then log in and open the Admin Dashboard.
 
-This is a demo-only access check, not secure authorization. Do not use it to protect real data.
+**Note:** This is only a frontend demo access check, not secure production authorization.
 
-## Demo behavior and limitations
+## ⚠️ Limitations
 
-- Accounts, cart contents, and orders are stored in the browser's `localStorage`; they are not synchronized between browsers or devices.
-- Passwords are stored as plain text in browser storage. This is not appropriate for production.
-- Checkout simulates order placement; it does not process real payments or contact a delivery service.
-- Food photos are loaded from Unsplash, and the Poppins font is loaded from Google Fonts, so those assets need an internet connection.
-- Menu pricing and food items are defined in `js/main.js`.
+- User accounts, cart and orders are stored in browser `localStorage`.
+- Data is not synchronized across browsers or devices.
+- Passwords are stored as plain text in browser storage.
+- Checkout does not process real payments.
+- Order tracking is simulated; no real delivery service is connected.
+- Food images and Google Fonts require an internet connection.
 
-To start over during testing, clear this site's browser storage using your browser's developer tools. This removes the locally saved demo accounts, cart, and orders.
+This project is intended for learning and demonstration, not production use.
 
-## Technologies
+## 🔮 Future Enhancements
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Browser `localStorage`
+- Integrate a Python/Django backend.
+- Add database support using MySQL.
+- Implement secure authentication.
+- Integrate a real payment gateway.
+- Connect a real order and delivery management system.
+
+## 👨‍💻 Developer
+
+**Uday Kiran Reddy**
+
+MCA Graduate | Full Stack Development Learner
+
+- GitHub: https://github.com/chinreddyudaykiranreddy-commits
+- LinkedIn: https://www.linkedin.com/in/chinreddyudaykiranreddy
